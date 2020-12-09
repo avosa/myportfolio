@@ -1,4 +1,5 @@
 # webster's portfolio
+Project written using Django. Click [here](http://webster.pythonanywhere.com/) to view live demo
 # First of all you'll have to install the following
 1. Git 
 2. virtualenv

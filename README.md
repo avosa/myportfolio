@@ -18,8 +18,8 @@ You can also create the same using Pip with below steps <br>
 
 <code>$ virtualenv django</code> <br>
 <code>$ cd django</code> <br>
-<code>$ cd .. </code> <br>
-<code>$ venv\Scripts\activate</code> on Windows or <code>$ source bin/activate</code> on Linux and Mac <br>
+<code>$ source bin/activate</code> on Linux and Mac or <code>$ venv\Scripts\activate</code> on Windows <br>
+<code>$ cd .. </code> this returns you to root folder of the project<br>
 
 
 4. Install the requirements for the project <br>

@@ -1,0 +1,42 @@
+{% extends 'webster/base.html' %}
+<!--extended the base html file-->
+
+<!--adding content-->
+{% block content %}
+<br><br><br>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-6 mx-auto">
+            <!--Contact Form-->
+            <form class="margin" action="{% url 'contact' %}" method="POST">
+                {% csrf_token %}
+                <div class="form-group row">
+                    <label for="emailinput" class="col-2 col form-label">Email</label>
+                    <div class="col-10">
+                        <input name="email" type="email" class="form-control" id="emailinput" placeholder="Enter email" required>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="subjectinput" class="col-2 col form-label">Subject</label>
+                    <div class="col-10">
+                        <input name="subject" placeholder="Enter subject" type="text" class="form-control" id="subjectinput">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="messageinput" class="col-2 col form-label">Message</label>
+                    <div class="col-10">
+                        <textarea name="message" placeholder="Enter message" class="form-control" id="messageinput" required></textarea>
+                    </div>
+                </div>
+                <center>
+                    <div class="pull-right">
+                        <button type="submit" class="btn btn-primary btn-md">Submit</button>
+                    </div>
+                </center>
+            </form>
+        </div>
+    </div>
+</div>
+
+        <br><br><br>
+{% endblock %}

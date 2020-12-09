@@ -6,7 +6,7 @@
 4. Pip and/or Pipenv
 5. Django
 
-# Run On Your Machine?
+# How to run on your machine locally
 
 1. Firstly, clone the repository using the git shell <br>
 <code>$ git clone https://github.com/avosa/myportfolio.git</code> <br>

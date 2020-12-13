@@ -1,4 +1,7 @@
 {% extends 'webster/base.html' %}
+{% block title %}
+Webster | Home
+{% endblock %}
 
 {% block content %}
     <!--Header-->
@@ -19,7 +22,7 @@
 
         <div class="row justify-content-center margin">
             <div class="pflink">
-                <a href="{% url 'about' %}">Explore More</a>
+                <a href="{% url 'about' %}">About Me</a>
             </div>
         </div>
     </div>
